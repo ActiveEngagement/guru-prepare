@@ -30,10 +30,13 @@ export default function getBoardsFor(tree) {
     for (const node of tree.children) {
         if (node.type === 'dir') {
             const items = itemsInNodes(node.children, node.name);
-            boards.push({
+            const board = {
                 title: node.name,
                 items
-            });
+            };
+            if (board.items.length > 0) {
+                boards.push(board);
+            }
         }
     }
 
