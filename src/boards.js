@@ -17,7 +17,7 @@ function itemsInNodes(nodes, currentPath) {
 
     for (const node of nodes) {
         if (node.type === 'file' && fileConstitutesCard(node)) {
-            items.push(path.join(currentPath, node.name));
+            items.push(node.path);
         }
     }
 

@@ -8,7 +8,7 @@ export default function (boards) {
         dto[name] = {
             Title: board.title,
             Items: board.items.map(item => ({
-                ID: item.replace(/\.md$/gi,'').replace(/[^a-zA-Z0-9\/]/gi, '_'),
+                ID: item.replace(/\.md$/gi,'').replace(/[^a-zA-Z0-9]/gi, '_'),
                 Type: 'card'
             }))
         };
