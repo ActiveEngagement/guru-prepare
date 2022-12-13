@@ -18,7 +18,7 @@ function getRequiredInput(name) {
 
 export default function() {
     return {
-        sourcePath: getRequiredInput('source_path'),
-        boardFile: getRequiredInput('board_file')
+        sourceDir: getRequiredInput('source_dir'),
+        boardsFile: getRequiredInput('boards_file')
     };
 }

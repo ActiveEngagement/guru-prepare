@@ -1,9 +1,9 @@
 name: 'Guru-Prepare'
 description: 'Generate Github-to-Guru config files.'
 inputs:
-  source_path:
+  source_dir:
     required: true
-  board_file:
+  boards_file:
     required: true
 runs:
   using: 'node16'

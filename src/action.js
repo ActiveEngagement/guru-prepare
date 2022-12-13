@@ -6,5 +6,5 @@ import buildBoardsYaml from './build_boards_yaml.js';
 export default async function (options) {
     const boards = getBoardsFor(await fileTree(options.sourceDir));
     const boardsYaml = buildBoardsYaml(boards);
-    await fs.promises.writeFile(options.boardFile, boardsYaml);
+    await fs.promises.writeFile(options.boardsFile, boardsYaml);
 }
