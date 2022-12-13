@@ -25,7 +25,7 @@ export default function getCardsFor(node, currentPath = '') {
             if (dataFile) {
                 const data = yaml.load(fs.readFileSync(dataFile.path));
                 cards.push({
-                    path: path.join(currentPath, n.name),
+                    path: n.path,
                     title: data.Title
                 });
             }
