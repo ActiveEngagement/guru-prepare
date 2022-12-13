@@ -1,4 +1,4 @@
-name: 'Guru-Prepare'
+name: Guruize
 description: 'Generate Github-to-Guru config files.'
 inputs:
   source_dir:
