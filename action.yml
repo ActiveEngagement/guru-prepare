@@ -1,0 +1,10 @@
+name: 'Guru-Prepare'
+description: 'Generate Github-to-Guru config files.'
+inputs:
+  source_path:
+    required: true
+  board_file:
+    required:true
+runs:
+  using: 'node16'
+  main: 'src/index.js'
