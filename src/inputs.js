@@ -19,6 +19,7 @@ function getRequiredInput(name) {
 export default function() {
     return {
         sourceDir: getRequiredInput('source_dir'),
-        boardsFile: getRequiredInput('boards_file')
+        boardsFile: getRequiredInput('boards_file'),
+        cardsFile: getRequiredInput('cards_file')
     };
 }

@@ -5,6 +5,8 @@ inputs:
     required: true
   boards_file:
     required: true
+  cards_file:
+    required: true
 runs:
   using: 'node16'
   main: 'src/index.js'
