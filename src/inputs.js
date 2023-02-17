@@ -21,6 +21,6 @@ export default function() {
         sourceDir: getRequiredInput('source_dir'),
         boardsFile: getRequiredInput('boards_file'),
         cardsFile: getRequiredInput('cards_file'),
-        cardsFile: getRequiredInput('collection_file')
+        collectionFile: getRequiredInput('collection_file')
     };
 }
