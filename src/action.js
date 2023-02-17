@@ -17,6 +17,6 @@ export default async function (options) {
     const cardsYaml = buildCardsYaml(cards);
     await fs.promises.writeFile(options.cardsFile, cardsYaml);
 
-    const collection = { tags: {} };
+    const collection = { Tags: {} };
     await fs.promises.writeFile(options.collectionFile, yaml.dump(collection));
 }
