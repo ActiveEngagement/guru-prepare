@@ -7,7 +7,7 @@ export default function (cards) {
     for (const card of cards) {
         dto[card.path] = {
             Title: card.title,
-            ExternalId: path.parse(path.basename(card.path)).name
+            ExternalId: card.path.replace(/\.md$/gi,'').replace(/[^a-zA-Z0-9]/gi, '_')
         };
     }
 
