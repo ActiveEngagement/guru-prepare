@@ -1,3 +1,4 @@
+import path from 'path';
 import yaml from 'js-yaml';
 
 export default function (cards) {
@@ -6,6 +7,7 @@ export default function (cards) {
     for (const card of cards) {
         dto[card.path] = {
             Title: card.title,
+            ExternalId: path.parse(path.basename(card.path)).name
         };
     }
 
