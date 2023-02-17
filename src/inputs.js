@@ -20,6 +20,7 @@ export default function() {
     return {
         sourceDir: getRequiredInput('source_dir'),
         boardsFile: getRequiredInput('boards_file'),
-        cardsFile: getRequiredInput('cards_file')
+        cardsFile: getRequiredInput('cards_file'),
+        cardsFile: getRequiredInput('collection_file')
     };
 }

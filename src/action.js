@@ -1,4 +1,5 @@
 import fs from 'fs';
+import yaml from 'js-yaml';
 import fileTree from './file_tree.js'
 import getBoardsFor from './boards.js';
 import getCardsFor from './cards.js';
@@ -15,4 +16,7 @@ export default async function (options) {
     const cards = getCardsFor(tree);
     const cardsYaml = buildCardsYaml(cards);
     await fs.promises.writeFile(options.cardsFile, cardsYaml);
+
+    const collection = { tags: {} };
+    await fs.promises.writeFile(options.collectionFile, yaml.dump(collection));
 }
